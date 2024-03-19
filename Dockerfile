@@ -4,7 +4,8 @@ EXPOSE 5000
 
 WORKDIR /app
 
-RUN pip install flask
+COPY req.txt .
+RUN pip install --no-cache-dir --upgrade -r req.txt
 
 COPY . .
 
