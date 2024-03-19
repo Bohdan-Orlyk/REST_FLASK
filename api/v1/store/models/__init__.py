@@ -1,2 +1,2 @@
-from item import ItemModel
-from store import StoreModel
+from api.v1.store.models.item import ItemModel
+from api.v1.store.models.store import StoreModel
